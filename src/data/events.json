@@ -1,0 +1,32 @@
+[
+  {
+    "id": "feni-noakhali-2024",
+    "name": "Feni and Noakhali flood, August 2024",
+    "bbox": [90.8, 22.5, 91.8, 23.5],
+    "before_window": { "start": "2024-08-01", "end": "2024-08-05" },
+    "after_window": { "start": "2024-08-20", "end": "2024-08-25" },
+    "sensor": "Sentinel-1",
+    "product": "OPERA DSWx-S1",
+    "provider": "NASA Earthdata / ASF DAAC"
+  },
+  {
+    "id": "sylhet-2022",
+    "name": "Sylhet flood, June 2022",
+    "bbox": [91.5, 24.5, 92.5, 25.2],
+    "before_window": { "start": "2022-05-15", "end": "2022-05-20" },
+    "after_window": { "start": "2022-06-15", "end": "2022-06-20" },
+    "sensor": "Sentinel-1",
+    "product": "OPERA DSWx-S1",
+    "provider": "NASA Earthdata / ASF DAAC"
+  },
+  {
+    "id": "sunamganj-2022",
+    "name": "Sunamganj flood, June 2022",
+    "bbox": [90.9, 24.8, 91.6, 25.3],
+    "before_window": { "start": "2022-05-15", "end": "2022-05-20" },
+    "after_window": { "start": "2022-06-15", "end": "2022-06-20" },
+    "sensor": "Sentinel-1",
+    "product": "OPERA DSWx-S1",
+    "provider": "NASA Earthdata / ASF DAAC"
+  }
+]

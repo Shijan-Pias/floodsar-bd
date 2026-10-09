@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a192f;
+  --color-cyan: #06b6d4;
+  --color-flood: #ef4444;
+}
+
+body {
+  @apply bg-[#0a192f] text-slate-100;
+  font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+  margin: 0;
+}

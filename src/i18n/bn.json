@@ -1,0 +1,41 @@
+{
+  "translation": {
+    "app_title": "ফ্লাডসার বিডি (FloodSAR BD)",
+    "app_tagline": "মেঘের আড়ালেও রাডার দেখে বন্যার চিত্র",
+    "select_event": "বন্যার ঘটনা নির্বাচন করুন",
+    "before": "আগে",
+    "after": "পরে",
+    "newly_inundated": "নতুন প্লাবিত এলাকা: {{area}} বর্গ কি.মি.",
+    "sample_data": "নমুনা তথ্য",
+    "stats": {
+      "before_water": "আগের জলের এলাকা",
+      "after_water": "পরবর্তী জলের এলাকা",
+      "increase": "বৃদ্ধি",
+      "resolution": "রেজোলিউশন",
+      "km2": "বর্গ কি.মি."
+    },
+    "methods": {
+      "title": "পদ্ধতি",
+      "step1": "১. দুটি সেন্টিনেল-১ (Sentinel-1) থেকে প্রাপ্ত জলের মাস্ক নির্বাচন (OPERA DSWx-S1)",
+      "step2": "২. উভয় সময়ের ওপেন-ওয়াটার ক্লাস পড়া",
+      "step3": "৩. নতুন বন্যা = পরের জল এবং আগের জল নয় (AND NOT)",
+      "step4": "৪. ক্ষেত্রফল = পিক্সেল সংখ্যা × ৩০ মি × ৩০ মি",
+      "step5": "৫. অনিশ্চয়তার নোট সহ প্রতিবেদন",
+      "note": "নোট: ঘন গাছপালা, বাতাস এবং শহরের কারণে রাডারে জল শনাক্তকরণ প্রভাবিত হতে পারে।"
+    },
+    "provenance": {
+      "title": "তথ্যের উৎস",
+      "dataset": "ডেটাসেট",
+      "product": "প্রোডাক্ট",
+      "scene_ids": "সিন আইডি",
+      "source": "উৎস",
+      "processed_at": "প্রক্রিয়াজাতকরণের সময়",
+      "data_type": "ডেটার ধরন"
+    },
+    "footer": {
+      "credits": "তথ্য: NASA Earthdata, ASF DAAC, Sentinel-1/ESA Copernicus, OPERA.",
+      "license": "Apache-2.0 এর অধীনে লাইসেন্সকৃত",
+      "project": "NASA Space Apps Challenge 2026 বাংলাদেশ"
+    }
+  }
+}

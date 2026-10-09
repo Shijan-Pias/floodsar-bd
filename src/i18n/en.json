@@ -1,0 +1,41 @@
+{
+  "translation": {
+    "app_title": "FloodSAR BD",
+    "app_tagline": "Radar sees the flood through the clouds",
+    "select_event": "Select Flood Event",
+    "before": "Before",
+    "after": "After",
+    "newly_inundated": "{{area}} km² newly inundated",
+    "sample_data": "SAMPLE DATA",
+    "stats": {
+      "before_water": "Before Water Area",
+      "after_water": "After Water Area",
+      "increase": "Increase",
+      "resolution": "Resolution",
+      "km2": "km²"
+    },
+    "methods": {
+      "title": "Methods",
+      "step1": "1. Select two Sentinel-1 derived water masks (OPERA DSWx-S1)",
+      "step2": "2. Read open-water class from both periods",
+      "step3": "3. New flood = water after AND NOT water before",
+      "step4": "4. Area = pixel count × 30m × 30m",
+      "step5": "5. Report with uncertainty note",
+      "note": "Note: SAR water detection can be affected by dense vegetation, wind roughening, and urban layover."
+    },
+    "provenance": {
+      "title": "Data Provenance",
+      "dataset": "Dataset",
+      "product": "Product",
+      "scene_ids": "Scene IDs",
+      "source": "Source",
+      "processed_at": "Processed At",
+      "data_type": "Data Type"
+    },
+    "footer": {
+      "credits": "Data: NASA Earthdata, ASF DAAC, Sentinel-1/ESA Copernicus, OPERA.",
+      "license": "Licensed under Apache-2.0",
+      "project": "NASA Space Apps Challenge 2026 Bangladesh"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "feni-noakhali-2024": {
+    "newly_inundated_km2": 450.5,
+    "before_water_km2": 120.3,
+    "after_water_km2": 570.8,
+    "pixel_size_m": 30,
+    "scene_ids": ["S1A_IW_GRDH_1SDV_20240822...", "S1A_IW_GRDH_1SDV_20240803..."],
+    "processed_at": "2024-09-01T10:00:00Z",
+    "is_sample": true
+  },
+  "sylhet-2022": {
+    "newly_inundated_km2": 1200.2,
+    "before_water_km2": 300.5,
+    "after_water_km2": 1500.7,
+    "pixel_size_m": 30,
+    "scene_ids": ["S1A_IW_GRDH_1SDV_20220618...", "S1A_IW_GRDH_1SDV_20220517..."],
+    "processed_at": "2022-07-01T10:00:00Z",
+    "is_sample": true
+  },
+  "sunamganj-2022": {
+    "newly_inundated_km2": 850.1,
+    "before_water_km2": 250.4,
+    "after_water_km2": 1100.5,
+    "pixel_size_m": 30,
+    "scene_ids": ["S1A_IW_GRDH_1SDV_20220618...", "S1A_IW_GRDH_1SDV_20220517..."],
+    "processed_at": "2022-07-01T10:00:00Z",
+    "is_sample": true
+  }
+}
