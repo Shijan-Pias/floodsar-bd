@@ -1,0 +1,121 @@
+{
+  "project": "FloodSAR BD",
+  "event": "Feni and Noakhali, Bangladesh",
+  "observation_dates": {
+    "before": "2024-08-09",
+    "after": "2024-08-21"
+  },
+  "crs": "EPSG:3857",
+  "source_crs": "EPSG:32646",
+  "source_pixel_size_m": 30.0,
+  "bounds_wgs84": [
+    90.8820305773257,
+    22.020908899222206,
+    91.58450881808984,
+    23.26098175405549
+  ],
+  "tile_scheme": "XYZ",
+  "tile_size": 256,
+  "minzoom": 6,
+  "maxzoom": 13,
+  "attribution": "OPERA DSWx-S1, NASA/JPL-Caltech; Sentinel-1 data, ESA/Copernicus.",
+  "interpretation_warning": "Candidate water gains and losses are exploratory backscatter transitions, not confirmed flood extent.",
+  "layers": [
+    {
+      "id": "opera_reference",
+      "title": "OPERA reference classification",
+      "tile_template": "tiles/opera_reference/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "description": "Native OPERA DSWx-S1 classification for 2024-08-21.",
+      "default_visibility": true
+    },
+    {
+      "id": "candidate_gain_m18",
+      "title": "Candidate water gain, -18 dB",
+      "tile_template": "tiles/candidate_gain_m18/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "description": "Exploratory Sentinel-1 VV threshold transition.",
+      "default_visibility": false
+    },
+    {
+      "id": "candidate_loss_m18",
+      "title": "Candidate water loss, -18 dB",
+      "tile_template": "tiles/candidate_loss_m18/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "description": "Exploratory Sentinel-1 VV threshold transition.",
+      "default_visibility": false
+    },
+    {
+      "id": "candidate_gain_m16",
+      "title": "Candidate water gain, -16 dB",
+      "tile_template": "tiles/candidate_gain_m16/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "description": "Exploratory Sentinel-1 VV threshold transition.",
+      "default_visibility": false
+    },
+    {
+      "id": "candidate_loss_m16",
+      "title": "Candidate water loss, -16 dB",
+      "tile_template": "tiles/candidate_loss_m16/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "description": "Exploratory Sentinel-1 VV threshold transition.",
+      "default_visibility": false
+    },
+    {
+      "id": "common_valid_coverage",
+      "title": "Common-valid observation coverage",
+      "tile_template": "tiles/common_valid_coverage/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "description": "Pixels with valid VV observations on both dates.",
+      "default_visibility": false
+    }
+  ],
+  "district_summary": {
+    "file": "district_summary.json",
+    "district_count": 2
+  },
+  "tile_statistics": {
+    "opera_reference": {
+      "tile_count": 769,
+      "bytes": 1445556,
+      "tile_template": "tiles/opera_reference/{z}/{x}/{y}.png"
+    },
+    "candidate_gain_m18": {
+      "tile_count": 769,
+      "bytes": 866093,
+      "tile_template": "tiles/candidate_gain_m18/{z}/{x}/{y}.png"
+    },
+    "candidate_loss_m18": {
+      "tile_count": 769,
+      "bytes": 590763,
+      "tile_template": "tiles/candidate_loss_m18/{z}/{x}/{y}.png"
+    },
+    "candidate_gain_m16": {
+      "tile_count": 769,
+      "bytes": 953160,
+      "tile_template": "tiles/candidate_gain_m16/{z}/{x}/{y}.png"
+    },
+    "candidate_loss_m16": {
+      "tile_count": 769,
+      "bytes": 626712,
+      "tile_template": "tiles/candidate_loss_m16/{z}/{x}/{y}.png"
+    },
+    "common_valid_coverage": {
+      "tile_count": 769,
+      "bytes": 447240,
+      "tile_template": "tiles/common_valid_coverage/{z}/{x}/{y}.png"
+    }
+  }
+}
