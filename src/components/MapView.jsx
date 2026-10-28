@@ -14,7 +14,7 @@ const EVENT_CONFIGS = {
     fallbackBounds: [90.8820305773257, 22.020908899222206, 91.58450881808984, 23.26098175405549],
   },
   'sylhet-2022': {
-  dataRoot: '/data/floodsar/2022/sylhet',
+  dataRoot: '/data/Sylhet 2022',
   title: 'Sylhet cross-sensor comparison',
   fallbackBounds: [91.62613493234578, 24.594444480975483, 92.49543124788984, 25.187447682456046],
 },
