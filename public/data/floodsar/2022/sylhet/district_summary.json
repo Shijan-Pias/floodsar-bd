@@ -1,0 +1,20 @@
+{
+  "event_id": "sylhet-2022",
+  "comparison_date": "2022-06-18",
+  "pixel_size_m": 30,
+  "strict_evaluation_area_km2": 2048.9571,
+  "gfm_flood_strict_km2": 1095.6735,
+  "alos2_positive_full_district_km2": 1094.3182,
+  "alos2_positive_inside_strict_km2": 860.0141,
+  "candidate_gain_m18_km2": 1382.1591,
+  "candidate_loss_m18_km2": 27.3823,
+  "candidate_net_m18_km2": 1354.7768,
+  "candidate_gain_m16_km2": 1470.0608,
+  "candidate_loss_m16_km2": 35.0518,
+  "candidate_net_m16_km2": 1435.009,
+  "gradient_boosting_predicted_full_km2": 1538.5185,
+  "random_forest_predicted_full_km2": 1540.7595,
+  "gradient_boosting_predicted_strict_km2": 1128.9825,
+  "random_forest_predicted_strict_km2": 1123.6113,
+  "interpretation_warning": "These values represent satellite-derived classifications and model predictions. They are not independently verified flood extent or field-measured flood area."
+}

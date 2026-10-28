@@ -1,0 +1,163 @@
+{
+  "project": "FloodSAR BD",
+  "schema": "floodsar.xyz_event_layers.v1",
+  "event_id": "sylhet-2022",
+  "title": "Sylhet Flood - June 2022",
+  "comparison_date": "2022-06-18",
+  "public_base_path": "/data/floodsar/2022/sylhet/",
+  "bounds_wgs84": [
+    91.62613493234578,
+    24.594444480975483,
+    92.49543124788984,
+    25.187447682456046
+  ],
+  "source_crs": "EPSG:32646",
+  "display_crs": "EPSG:3857",
+  "source_pixel_size_m": 30,
+  "tile_scheme": "XYZ",
+  "tile_size": 256,
+  "minzoom": 6,
+  "maxzoom": 13,
+  "attribution": "Copernicus GFM; Sentinel-1, ESA/Copernicus; ALOS-2, JAXA/Sentinel Asia AIT.",
+  "interpretation_warning": "Candidate gains are exploratory radar transitions, not confirmed flood extent. GFM agreement is not independent ground-truth accuracy. ALOS-2 polygons are positive detections only.",
+  "layers": [
+    {
+      "id": "sar_candidate_gain_m18",
+      "title": "Sentinel-1 candidate gain -18 dB",
+      "description": "Exploratory radar threshold transition; not confirmed flood extent.",
+      "tile_template": "tiles/sar_candidate_gain_m18/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "default_visibility": false,
+      "rendering": "RGBA PNG",
+      "resampling": "near"
+    },
+    {
+      "id": "sar_candidate_gain_m16",
+      "title": "Sentinel-1 candidate gain -16 dB",
+      "description": "Exploratory radar threshold transition; not confirmed flood extent.",
+      "tile_template": "tiles/sar_candidate_gain_m16/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "default_visibility": false,
+      "rendering": "RGBA PNG",
+      "resampling": "near"
+    },
+    {
+      "id": "gfm_flood_strict",
+      "title": "GFM flood classification",
+      "description": "GFM flood class within the strict comparison domain.",
+      "tile_template": "tiles/gfm_flood_strict/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "default_visibility": true,
+      "rendering": "RGBA PNG",
+      "resampling": "near"
+    },
+    {
+      "id": "alos_positive_fraction",
+      "title": "ALOS-2 detected-water fraction",
+      "description": "Fractional coverage of ALOS-2 positive detections; not a complete flood mask.",
+      "tile_template": "tiles/alos_positive_fraction/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "default_visibility": false,
+      "rendering": "RGBA PNG",
+      "resampling": "average"
+    },
+    {
+      "id": "comparison_domain",
+      "title": "Comparison eligibility domain",
+      "description": "Strict comparison domain and excluded areas. Exclusion codes are not individual verified flood classes.",
+      "tile_template": "tiles/comparison_domain/{z}/{x}/{y}.png",
+      "minzoom": 6,
+      "maxzoom": 13,
+      "tile_size": 256,
+      "default_visibility": false,
+      "rendering": "RGBA PNG",
+      "resampling": "near"
+    }
+  ],
+  "tile_statistics": {
+    "sar_candidate_gain_m18": {
+      "tile_count": 468,
+      "bytes": 1374289,
+      "tile_template": "tiles/sar_candidate_gain_m18/{z}/{x}/{y}.png",
+      "tiles_by_zoom": {
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 4,
+        "10": 12,
+        "11": 30,
+        "12": 99,
+        "13": 320
+      }
+    },
+    "sar_candidate_gain_m16": {
+      "tile_count": 468,
+      "bytes": 1411751,
+      "tile_template": "tiles/sar_candidate_gain_m16/{z}/{x}/{y}.png",
+      "tiles_by_zoom": {
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 4,
+        "10": 12,
+        "11": 30,
+        "12": 99,
+        "13": 320
+      }
+    },
+    "gfm_flood_strict": {
+      "tile_count": 468,
+      "bytes": 1232111,
+      "tile_template": "tiles/gfm_flood_strict/{z}/{x}/{y}.png",
+      "tiles_by_zoom": {
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 4,
+        "10": 12,
+        "11": 30,
+        "12": 99,
+        "13": 320
+      }
+    },
+    "alos_positive_fraction": {
+      "tile_count": 468,
+      "bytes": 5644176,
+      "tile_template": "tiles/alos_positive_fraction/{z}/{x}/{y}.png",
+      "tiles_by_zoom": {
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 4,
+        "10": 12,
+        "11": 30,
+        "12": 99,
+        "13": 320
+      }
+    },
+    "comparison_domain": {
+      "tile_count": 468,
+      "bytes": 1807523,
+      "tile_template": "tiles/comparison_domain/{z}/{x}/{y}.png",
+      "tiles_by_zoom": {
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 4,
+        "10": 12,
+        "11": 30,
+        "12": 99,
+        "13": 320
+      }
+    }
+  },
+  "scientific_source_manifest": "s117_frontend_manifest.json"
+}
