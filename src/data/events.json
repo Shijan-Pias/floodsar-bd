@@ -1,4 +1,3 @@
-
 [
   {
     "id": "feni-noakhali-2024",
@@ -24,7 +23,12 @@
   {
     "id": "sylhet-2022",
     "name": "Sylhet flood, June 2022",
-    "bbox": [91.5, 24.5, 92.5, 25.2],
+    "bbox": [
+      91.62613493234578,
+      24.594444480975483,
+      92.49543124788984,
+      25.187447682456046
+    ],
     "before_window": {
       "start": "2022-05-15",
       "end": "2022-05-20"
@@ -33,14 +37,20 @@
       "start": "2022-06-15",
       "end": "2022-06-20"
     },
-    "sensor": "Sentinel-1",
-    "product": "OPERA DSWx-S1",
-    "provider": "NASA Earthdata / ASF DAAC"
+    "sensor": "Sentinel-1 and ALOS-2",
+    "product": "Sentinel-1 candidate transitions; Copernicus GFM; ALOS-2 positive-only detections",
+    "provider": "ESA/Copernicus; Copernicus GFM; Sentinel Asia/AIT",
+    "comparison_date": "2022-06-18"
   },
   {
     "id": "sunamganj-2022",
     "name": "Sunamganj flood, June 2022",
-    "bbox": [90.9, 24.8, 91.6, 25.3],
+    "bbox": [
+      90.9,
+      24.8,
+      91.6,
+      25.3
+    ],
     "before_window": {
       "start": "2022-05-15",
       "end": "2022-05-20"

@@ -4,25 +4,38 @@
     "before_water_km2": 120.3,
     "after_water_km2": 570.8,
     "pixel_size_m": 30,
-    "scene_ids": ["S1A_IW_GRDH_1SDV_20240822...", "S1A_IW_GRDH_1SDV_20240803..."],
+    "scene_ids": [
+      "S1A_IW_GRDH_1SDV_20240822...",
+      "S1A_IW_GRDH_1SDV_20240803..."
+    ],
     "processed_at": "2024-09-01T10:00:00Z",
     "is_sample": true
   },
   "sylhet-2022": {
-    "newly_inundated_km2": 1200.2,
-    "before_water_km2": 300.5,
-    "after_water_km2": 1500.7,
+    "event_id": "sylhet-2022",
+    "comparison_date": "2022-06-18",
+    "newly_inundated_km2": null,
+    "before_water_km2": null,
+    "after_water_km2": null,
     "pixel_size_m": 30,
-    "scene_ids": ["S1A_IW_GRDH_1SDV_20220618...", "S1A_IW_GRDH_1SDV_20220517..."],
-    "processed_at": "2022-07-01T10:00:00Z",
-    "is_sample": true
+    "scene_ids": [
+      "S1A_IW_GRDH_1SDV_20220419T234739_20220419T234804_042849_051D54_1702",
+      "S1A_IW_GRDH_1SDV_20220618T234743_20220618T234808_043724_05385D_E87E"
+    ],
+    "processed_at": null,
+    "is_sample": false,
+    "source": "See /data/floodsar/2022/sylhet/stats_sylhet.json for audited event statistics.",
+    "interpretation_warning": "Candidate gains and losses are exploratory Sentinel-1 backscatter transitions, not confirmed flood extent. GFM is a satellite-derived reference, not independent ground truth. ALOS-2 polygons are positive detections only; the ALOS-2 observation footprint has not been independently verified. ML predictions were trained on GFM-derived labels and are not independently validated flood extent. Candidate transition areas use common-valid observations and differ from the strict GFM evaluation area."
   },
   "sunamganj-2022": {
     "newly_inundated_km2": 850.1,
     "before_water_km2": 250.4,
     "after_water_km2": 1100.5,
     "pixel_size_m": 30,
-    "scene_ids": ["S1A_IW_GRDH_1SDV_20220618...", "S1A_IW_GRDH_1SDV_20220517..."],
+    "scene_ids": [
+      "S1A_IW_GRDH_1SDV_20220618...",
+      "S1A_IW_GRDH_1SDV_20220517..."
+    ],
     "processed_at": "2022-07-01T10:00:00Z",
     "is_sample": true
   }

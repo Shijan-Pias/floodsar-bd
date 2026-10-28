@@ -251,6 +251,68 @@ export const getEvent = async (id) => {
 };
 
 export const getFloodStats = async (id) => {
+  // Sylhet statistics are sourced from the validated S1.17/S1.18 export.
+  if (id === 'sylhet-2022') {
+    const response = await fetch(
+      '/data/floodsar/2022/sylhet/stats_sylhet.json',
+      { cache: 'no-store' }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `Could not load Sylhet statistics: HTTP ${response.status}`
+      );
+    }
+
+    const data = await response.json();
+    if (
+      data.event_id !== 'sylhet-2022' ||
+      data.comparison_date !== '2022-06-18'
+    ) {
+      throw new Error(
+        'Sylhet statistics have an unexpected event ID or comparison date.'
+      );
+    }
+
+    const requiredNumericFields = [
+      'district_area_km2',
+      'strict_evaluation_area_km2',
+      'alos_positive_area_district_km2',
+      'alos_positive_area_strict_km2',
+      'gfm_flood_strict_area_km2',
+      'candidate_gain_m18_km2',
+      'candidate_loss_m18_km2',
+      'net_candidate_change_m18_km2',
+      'candidate_gain_m16_km2',
+      'candidate_loss_m16_km2',
+      'net_candidate_change_m16_km2',
+      'strict_gfm_positive_overlap_pct',
+      'strict_sar_m18_positive_overlap_pct',
+      'strict_sar_m16_positive_overlap_pct',
+      'candidate_transition_valid_area_km2',
+      'alos_positive_area_outside_strict_km2',
+      'alos_positive_outside_due_to_gfm_exclusion_km2',
+      'alos_positive_outside_due_to_reference_water_km2',
+    ];
+
+    for (const field of requiredNumericFields) {
+      if (
+        data[field] === null ||
+        data[field] === undefined ||
+        !Number.isFinite(Number(data[field]))
+      ) {
+        throw new Error(`Sylhet statistics are missing a valid ${field}.`);
+      }
+    }
+
+    return {
+      ...data,
+      pixel_size_m: 30,
+      is_sample: false,
+      source: 'S1.17/S1.18 validated Sylhet raster export',
+    };
+  }
+
   // Do not display old sample statistics for unsupported events.
   if (id !== REAL_EVENT_ID) {
     return null;
